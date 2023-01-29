@@ -1,0 +1,53 @@
+.hero{
+    background-color: rgba(90, 193, 145, 0.789);
+    padding: 10%;
+}
+
+h2{
+
+font-family: 'Roboto Slab', serif;
+font-weight: 600;
+font-size: 4rem;
+}
+
+.recipe-head{
+    color : rgb(51, 60, 137);
+}
+
+.hero-search{
+    border: none;
+    height: 25px;
+    border-radius: 10px;
+    padding: 15px 15px 15px 30px;
+    /* width: 30%; */
+    box-shadow: 1px 1px 1px;
+}   
+
+.hero-search:focus{
+   outline: 1px solid rgb(137, 132, 132);
+}
+
+.searchbar-container{
+    margin-top: 20px;
+    position: relative;
+
+}
+.icon{
+    position: absolute;
+    left: 10px;
+    top: 8px;
+
+}
+
+.search-btn{
+    background-color: rgb(7, 0, 14);
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 2px;
+}
+
+.search-btn:hover{
+    color: white;
+    background-color: rgb(53, 52, 52);
+}
