@@ -7,9 +7,9 @@ export const setItems = (items) => {
     }
 } 
 
-export const selectedItems = (items) => {
+export const selectedItems = (item) => {
     return {
         type : ACTION_TYPES.SET_SELECTED_ITEM,
-        payload : items
+        payload : item
     }
 }
