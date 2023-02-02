@@ -18,10 +18,10 @@ export const setItemReducer = (state = {}, action) => {
     return state
 }
 
-export const searchItemReducer = (state = {} , action) => {
+export const searchItemReducer = (state = "" , action) => {
     if(action.type === ACTION_TYPES.SEARCH_ITEM){
-        return {state}
-    }
+        return state = action.payload
+        }
     return state
 }
 

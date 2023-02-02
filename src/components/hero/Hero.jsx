@@ -7,10 +7,14 @@ import { ACTION_TYPES } from "../../redux/actions/actiontypes";
 const Hero = () => {
   const [searchItem,setSearchItem] = useState('')
   const data = useSelector((state) => state.searchItem);
-  const dispatch = useDispatch();
+  const dispatch = useDispatch(); 
+  
 
 
-  console.log("For data in input ", searchItem);
+  const handleSearch = () => {
+    dispatch({type : ACTION_TYPES.SEARCH_ITEM, payload : searchItem})
+    console.log(data)
+  }
 
   return (
     <div className="hero d-flex flex-column align-items-center ">
@@ -28,7 +32,7 @@ const Hero = () => {
             setSearchItem(e.target.value)
           }
         />
-        <button className="search-btn">Search</button>
+        <button className="search-btn" onClick={handleSearch}>Search</button>
         <BiSearchAlt2 className="icon" />
       </div>
     </div>
