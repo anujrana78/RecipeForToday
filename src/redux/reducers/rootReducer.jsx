@@ -1,10 +1,11 @@
 import { combineReducers } from "redux";
-import {itemReducer, setItemReducer } from "./itemReducer";
+import {itemReducer, searchItemReducer, setItemReducer } from "./itemReducer";
 
 
  const rootReducer = combineReducers({
     allItem : itemReducer,
-    setItem : setItemReducer
+    setItem : setItemReducer,
+    searchItem : searchItemReducer
 })
 
 export default rootReducer

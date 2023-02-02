@@ -11,10 +11,16 @@ export const itemReducer = (state = initialState,action) => {
     return state
 }
 
-
 export const setItemReducer = (state = {}, action) => {
     if(action.type === ACTION_TYPES.SET_SELECTED_ITEM){
         return{...state,...action.payload}
+    }
+    return state
+}
+
+export const searchItemReducer = (state = {} , action) => {
+    if(action.type === ACTION_TYPES.SEARCH_ITEM){
+        return {state}
     }
     return state
 }

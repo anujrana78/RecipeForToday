@@ -13,3 +13,10 @@ export const selectedItems = (item) => {
         payload : item
     }
 }
+
+export const searchItem = (item) => {
+    return { 
+        type : ACTION_TYPES.SEARCH_ITEM,
+        payload : item
+    }
+}

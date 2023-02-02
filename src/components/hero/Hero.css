@@ -17,7 +17,7 @@ font-size: 4rem;
 .hero-search{
     border: none;
     height: 25px;
-    border-radius: 10px;
+    border-radius: 10px 0 0 10px;
     padding: 15px 15px 15px 30px;
     /* width: 30%; */
     box-shadow: 1px 1px 1px;
@@ -36,18 +36,19 @@ font-size: 4rem;
     position: absolute;
     left: 10px;
     top: 8px;
-
 }
 
 .search-btn{
     background-color: rgb(7, 0, 14);
     border: none;
     color: white;
-    padding: 5px 20px;
-    border-radius: 2px;
+    padding: 4px 20px;
+    border-radius: 0 10px 10px 0;
+
 }
 
 .search-btn:hover{
     color: white;
     background-color: rgb(53, 52, 52);
 }
+
